@@ -1,0 +1,143 @@
+h1 {
+    text-align: center;
+    color: rgb(255,255,102);
+    font-size: 45px;
+    font-family: fontThree;
+}
+
+@font-face{
+    font-family: myFont;
+    src: url(Fonts/black-ops-one/BlackOpsOne-Regular.ttf);
+
+    font-family: fontTwo;
+    src: url(Fonts/3dumb/2Dumb.ttf);
+
+    font-family: fontThree;
+    src: url(Fonts/Commando/commando.ttf);
+}
+
+body{
+    background-image: url('images/back2.png');
+}
+
+
+#border{
+
+     border: 13px outset white;
+     border-width: 13px;
+     padding: 30px;
+     margin: 26px;
+     display: flex;     
+     border-color: purple;
+     margin: auto;
+     width: 200px;
+     margin-bottom: 40px;
+     color: white;
+     text-align: center;
+     font-size: 40px;
+     font-family: fontThree;
+}
+
+#head{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.dot{
+ 
+ display: flex;   
+ padding: 30px;
+ justify-content: center;
+ text-align: center;
+ vertical-align: middle;
+ height: 18px;
+ width: 18px;
+ background-color: white;
+ border-radius: 50%;
+ display: inline-block;
+ margin: 5px;
+background: yellow;
+}
+
+
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 10px;
+}
+
+#headText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.tx{
+    display: flex;   
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 34px;
+    margin-bottom: 0;
+    color: purple;
+    font-family: fontThree;
+    font-size: 20px;
+}
+
+.rowText{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+
+}
+
+.gameboard{
+    background-color: white;
+    width:130px;
+    height:100px;
+    margin: 15px;
+    font-size: 70px;
+    line-height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 10px;
+} 
+
+
+button{
+  background-color: rgb(255,255,102);
+  padding: 15px 32px;
+  text-align: center;
+  border: none;
+  color: purple;
+  font-size: 16px;
+  margin: auto;
+  display: block;
+  font-family: fontThree;
+  font-size: 25px;
+}
+
+.row .gameboard:hover{
+    background-color: yellow;
+}
