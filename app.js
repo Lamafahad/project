@@ -6,14 +6,15 @@ let count = 0;
 
 let playerX=0;
 let playerO=0;
+let tie = 0;
+
+let audio = new Audio ('Audios/winning.wav');
 
 const scoreO = document.querySelector('#playerO');
 const scoreX = document.querySelector('#playerX');
 
 
 const borderText = document.querySelector('#border');
-
-
 
 const startPlay = function(){
 
@@ -56,7 +57,6 @@ const checkWinner = function(){
         box[1].style.background='yellow'; 
         box[2].style.background='yellow'; 
         playerX++;
-        scoreX.innerText=playerX;
         stopGame("X");
     }
     else 
@@ -68,7 +68,7 @@ const checkWinner = function(){
         box[1].style.background='yellow'; 
         box[2].style.background='yellow'; 
         playerO++;
-        scoreO .innerText=playerO;
+        scoreO.innerText='playerO';
         stopGame("O");
     
     }
@@ -82,7 +82,6 @@ const checkWinner = function(){
         box[4].style.background='yellow'; 
         box[5].style.background='yellow'; 
         playerX++;
-        playerX.innerText='playerX';
      stopGame('X');}
 
     else 
@@ -94,7 +93,6 @@ const checkWinner = function(){
         box[4].style.background='yellow'; 
         box[5].style.background='yellow'; 
         playerO++;
-        playerO.innerText='playerO';
     stopGame('O');}
 
     else 
@@ -230,19 +228,27 @@ const checkWinner = function(){
 
     else 
     if(count == 9){
-        alert('TIE');
+        alert('Tie');
+        tie++;
     }
+
     console.log('player X is ' + playerX);
     console.log('player O is ' + playerO);
+
+    dot1.innerText=playerX;
+    dot2.innerText=playerO;
+    dot3.innerText=tie;
+
 }
 
 
 const stopGame = function(x){    
     alert(x + ' Won!');
+    audio.play();
     for (let i = 0; i < box.length; i++) {
     box[i].removeEventListener('click', startPlay);
     }
-} 
+}
 
 const playAgain = function(){
     for (let i = 0; i < box.length; i++) {

@@ -25,17 +25,18 @@ body{
 
      border: 13px outset white;
      border-width: 13px;
-     padding: 30px;
-     margin: 26px;
+     padding: 10px;
      display: flex;     
      border-color: purple;
      margin: auto;
      width: 200px;
      margin-bottom: 40px;
      color: white;
-     text-align: center;
-     font-size: 40px;
+     text-align:center;
+     font-size: 30px;
      font-family: fontThree;
+     justify-content: center;
+
 }
 
 #head{
@@ -59,6 +60,8 @@ body{
  display: inline-block;
  margin: 5px;
 background: yellow;
+font-size: 23px;
+color: black;
 }
 
 
