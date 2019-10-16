@@ -8,10 +8,13 @@ let playerX=0;
 let playerO=0;
 let tie = 0;
 
-let audio = new Audio ('Audios/winning.wav');
 
 const scoreO = document.querySelector('#playerO');
 const scoreX = document.querySelector('#playerX');
+
+let audio = new Audio('audios/tada.wav');
+let audioTie = new Audio('audios/tie.wav');
+let audioScore = new Audio('audios/score.mp3');
 
 
 const borderText = document.querySelector('#border');
@@ -19,9 +22,9 @@ const borderText = document.querySelector('#border');
 const startPlay = function(){
 
 if(playerTurn === true){
-    this.innerText = 'X';
-    playerTurn = false;
-    borderText.innerText=' O Turn ';
+    this.innerText= 'X';
+    playerTurn= false;
+    borderText.innerText= ' O Turn ';
 }  
 else{
     this.innerText = 'O';
@@ -36,7 +39,6 @@ checkWinner();
 this.removeEventListener('click' , startPlay);
 
 }
-
 
  for (let i = 0; i < box.length; i++) {
     box[i].addEventListener('click' , startPlay)
@@ -229,6 +231,7 @@ const checkWinner = function(){
     else 
     if(count == 9){
         alert('Tie');
+        audioTie.play();
         tie++;
     }
 
@@ -239,8 +242,8 @@ const checkWinner = function(){
     dot2.innerText=playerO;
     dot3.innerText=tie;
 
-}
 
+}
 
 const stopGame = function(x){    
     alert(x + ' Won!');
