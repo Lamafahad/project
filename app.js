@@ -19,6 +19,10 @@ let audioScore = new Audio('audios/score.mp3');
 
 const borderText = document.querySelector('#border');
 
+
+// function that add X or O to the boxes 
+//and write who's turn is next
+
 const startPlay = function(){
 
 if(playerTurn === true){
@@ -34,7 +38,10 @@ else{
 
 count++;
 console.count(count);
+
 checkWinner();
+
+// To prevent the player to click on the box again.
 
 this.removeEventListener('click' , startPlay);
 
@@ -45,11 +52,9 @@ this.removeEventListener('click' , startPlay);
 }
 
 
-
-
 const checkWinner = function(){
 
-    let boxes = document.getElementsByClassName('gameboard');
+let boxes = document.getElementsByClassName('gameboard');
 
     if(boxes[0].textContent == 'X' && boxes[1].textContent == 'X' && boxes[2].textContent == 'X') {
         box[0].style.textDecoration='line-through';  

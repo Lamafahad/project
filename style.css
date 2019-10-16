@@ -21,33 +21,14 @@ body{
 }
 
 
-#border{
-
-     border: 13px outset white;
-     border-width: 13px;
-     padding: 10px;
-     display: flex;     
-     border-color: purple;
-     margin: auto;
-     width: 200px;
-     margin-bottom: 40px;
-     color: black;
-     text-align:center;
-     font-size: 30px;
-     font-family: fontThree;
-     justify-content: center;
-
-}
 
 #head{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    justify-items: center;
 }
 
 .dot{
- 
  display: flex;   
  padding: 30px;
  justify-content: center;
@@ -55,7 +36,6 @@ body{
  vertical-align: middle;
  height: 18px;
  width: 18px;
- background-color: white;
  border-radius: 50%;
  display: inline-block;
  margin: 5px;
@@ -63,7 +43,6 @@ body{
  font-size: 23px;
  color: black;
 }
-
 
 .row1{
     display: flex;
@@ -76,7 +55,6 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    justify-items: center;
 }
 
 .tx{
@@ -102,7 +80,6 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    justify-items: center;
 }
 
 .gameboard{
@@ -127,6 +104,21 @@ body{
     padding-bottom: 10px;
 } 
 
+#border{
+    border: 13px outset white;
+    border-width: 13px;
+    padding: 10px;
+    display: flex;     
+    border-color: purple;
+    margin: auto;
+    width: 200px;
+    margin-bottom: 40px;
+    color: black;
+    text-align:center;
+    font-size: 30px;
+    font-family: fontThree;
+    justify-content: center;
+}
 
 button{
   background-color: rgb(255,255,102);
