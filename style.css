@@ -6,12 +6,6 @@ h1 {
 }
 
 @font-face{
-    font-family: myFont;
-    src: url(Fonts/black-ops-one/BlackOpsOne-Regular.ttf);
-
-    font-family: fontTwo;
-    src: url(Fonts/3dumb/2Dumb.ttf);
-
     font-family: fontThree;
     src: url(Fonts/Commando/commando.ttf);
 }
